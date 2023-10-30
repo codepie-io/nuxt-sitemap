@@ -11,10 +11,10 @@ async function resolveUrls(urls: SitemapRoot['urls']) {
 export async function resolveAsyncDataSources(input: BuildSitemapInput | BuildSitemapIndexInput) {
   const { hasPrerenderedRoutesPayload, isNuxtContentDocumentDriven } = input.buildTimeMeta
   const entries: DataSourceResult[] = []
-  entries.push({
-    context: 'pages',
-    urls: input.pages,
-  })
+  // entries.push({
+  //   context: 'pages',
+  //   urls: input.pages,
+  // })
   // if (input.prerenderUrls) {
   //   entries.push({
   //     context: 'prerender',
